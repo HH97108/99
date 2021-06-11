@@ -19,7 +19,7 @@ let cardTime = $.getdata('zqtime') || '05'; //打卡时间
 let withdrawUrl = "https://ios.baertt.com/v5/wechat/withdraw2.json";
 let withdrawBody = $.getdata('cashbody_zq');
 let cookieYouth = $.getdata('youthheader_zq');
-let ARTBODYs = $.getdata('read_zq');
+//let ARTBODYs = $.getdata('read_zq');
 let READTIME = $.getdata('readtime_zq');
 let rotaryscore=0,doublerotary=0; 
 
