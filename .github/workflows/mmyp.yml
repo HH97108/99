@@ -11,9 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,8 +22,7 @@ jobs:
         if: env.myxphd
         run: |
           npm install
-      - name: '运行 【美美】'
-        if: env.myxphd
+      - name: '运行 【美美】＇
         run: |
           node Task/myxp.js
         env:
