@@ -60,7 +60,7 @@ let status;
 status = (status = ($.getval("myxpstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const myxpurlArr = [],myxphdArr = [],myxpbodyArr = [],myxpcount = ''
 let myxpurl = $.getdata('myxpurl')
-let myxphd = $.getdata('myxphd')
+let myxphd = "{"Accept-Encoding":"gzip, deflate","Accept":"*/*","Connection":"keep-alive","Host":"47.108.30.245:4001","User-Agent":"mei yin xing pin/2.0.3 (iPhone; iOS 14.6; Scale/3.00)","Accept-Language":"zh-Hans-CN;q=1","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjEwNyIsImV4cCI6MTY4NDE5NjkwMiwidXNlcklkIjoxMjEwNywiaWF0IjoxNjIzNzE2OTAyfQ.3U9wwwHrqo29TdChVspNe9OFVimDZXmnbxq0UiADrRXCX2zf88VVyc13oPcPQEfsKZxWhMnAvCabr4J4W7_NOg"}"
 let myxpbody = $.getdata('myxpbody')
 let b = Math.round(new Date().getTime()/1000).toString();
 let DD = RT(31000,41000)
