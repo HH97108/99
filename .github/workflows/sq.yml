@@ -2,31 +2,30 @@ name: 书
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0 0 29 2 *'
-  watch:
-    types: started
+     - cron: '30 */1 * * *'
 jobs:
   build:
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    runs-on: ubuntu-latest       
     steps:
+      
       - name: Checkout
-        uses: actions/checkout@v1     
-      - name: Use Node.js 12.x
+        run: |
+          git clone https://github.com/YiYuDuXian/DiErPi.git ~/js
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 14.x
       - name: npm install
         run: |
-          npm install
-      - name: '运行 【书旗】'
+          cd ~/js
+          npm install got
+          npm install cron
+          npm install request
+          npm install tough-cookie
+      - name: '【书旗小说】'
         run: |
+          cd ~/js   
           node Task/shuqi.js
         env:
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
