@@ -2,7 +2,7 @@ name: 书
 on:
   workflow_dispatch:
   schedule:
-     - cron: '07 */1 * * *'
+     - cron: '7 */1 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest       
