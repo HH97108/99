@@ -10,7 +10,7 @@ jobs:
       
       - name: Checkout
         run: |
-          git clone https://github.com/YiYuDuXian/DiErPi.git ~/js
+          git clone https://github.com/HH97108/99.git ~/js
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
