@@ -20,7 +20,7 @@ modulees = 1 //1 选择方式一 2 选择方式二 3 选择方式三
 
 
 //方式一
-let cookie1 =$.getdata('cookie1')
+let cookie1 =
 
 //方式二
 let cookie2 =
