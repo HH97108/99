@@ -2019,7 +2019,7 @@ function user(timeout = 0) {
     })
 }
 //视频奖励
-function video(timeout = 0) {
+//function video(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2106,7 +2106,7 @@ function upload(timeout = 0) {
     })
 }
 //阅读奖励
-function reads(timeout = 0) {
+//function reads(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             for (let i = 0; i < 20; i++) {
@@ -2144,7 +2144,7 @@ function reads(timeout = 0) {
     })
 }
 //每日签到
-function sign(timeout = 0) {
+//function sign(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2238,7 +2238,7 @@ function resource(timeout = 0) {
     })
 }
 //每日分享
-function share(timeout = 0) {
+//function share(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2270,7 +2270,7 @@ function share(timeout = 0) {
     })
 }
 //视频任务
-function videolist(timeout = 0) {
+//function videolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2333,7 +2333,7 @@ function bubble(timeout = 0) {
     })
 }
 //收取奖励
-function manual(timeout = 0) {
+//function manual(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2362,7 +2362,7 @@ function manual(timeout = 0) {
     })
 }
 //阅读时长
-function readlist(timeout = 0) {
+//function readlist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2507,7 +2507,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版视频奖励
-function jsvideo(timeout = 0) {
+//function jsvideo(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2536,7 +2536,7 @@ function jsvideo(timeout = 0) {
     })
 }
 //极速版阅读奖励
-function jsreads(timeout = 0) {
+//function jsreads(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             for (let i = 0; i < 20; i++) {
@@ -2577,7 +2577,7 @@ function jsreads(timeout = 0) {
     })
 }
 //极速版每日签到
-function jssign(timeout = 0) {
+//function jssign(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2609,7 +2609,7 @@ function jssign(timeout = 0) {
     })
 }
 //极速版签到视频任务
-function jsqdvideolist(timeout = 0) {
+//function jsqdvideolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2640,7 +2640,7 @@ function jsqdvideolist(timeout = 0) {
     })
 }
 //极速版签到视频奖励
-function jsqdvideo(timeout = 0) {
+//function jsqdvideo(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2669,7 +2669,7 @@ function jsqdvideo(timeout = 0) {
     })
 }
 //极速版任务列表
-function jsresource(timeout = 0) {
+//function jsresource(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2747,7 +2747,7 @@ function jsresource(timeout = 0) {
     })
 }
 //极速版每日分享
-function jsshare(timeout = 0) {
+//function jsshare(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2779,7 +2779,7 @@ function jsshare(timeout = 0) {
     })
 }
 //极速版每日书城
-function jsbooklist(timeout = 0) {
+//function jsbooklist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2811,7 +2811,7 @@ function jsbooklist(timeout = 0) {
     })
 }
 //极速版每日书城领奖
-function jsbooklj(timeout = 0) {
+//function jsbooklj(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2843,7 +2843,7 @@ function jsbooklj(timeout = 0) {
     })
 }
 //极速版视频任务
-function jsvideolist(timeout = 0) {
+//function jsvideolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
