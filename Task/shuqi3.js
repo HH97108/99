@@ -132,14 +132,84 @@ Minutes = 10; // 通知 默认控制在0-10分内
 $.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, SC = 0, ddtime = '';
 CZ = 10
 Length = 0
-
+let shuqiuserurlArr = [];
+let shuqisyurlArr = [];
+let shuqisybodyArr = [];
+let shuqispbodyArr = [];
+let shuqiscbodyArr = [];
+let shuqiydbodyArr = [];
+let shuqiqdbodyArr = [];
+let shuqirwbodyArr = [];
+let shuqifxbodyArr = [];
+let shuqisprwurlArr = [];
+let shuqijlbodyArr = [];
+let shuqisqjlbodyArr = [];
 let shuqicjyurlArr = [];
 let shuqicjcsbodyArr = [];
 let shuqicjbodyArr = [];
-
+let shuqijsspbodyArr = [];
+let shuqijsydurlArr = [];
+let shuqijsydbodyArr = [];
+let shuqijsqdbodyArr = [];
+let shuqijsqdspyurlArr = [];
+let shuqijsqdspbodyArr = [];
+let shuqijsrwbodyArr = [];
+let shuqijsfxbodyArr = [];
+let shuqijsbookurlArr = [];
+let shuqijsbookbodyArr = [];
+let shuqijssprwurlArr = [];
+let shuqiuserurlVal = ``;
+let shuqisyurlVal = ``;
+let shuqisybodyVal = ``;
+let shuqispbodyVal = ``;
+let shuqiscbodyVal = ``;
+let shuqiydbodyVal = ``;
+let shuqiqdbodyVal = ``;
+let shuqirwbodyVal = ``;
+let shuqifxbodyVal = ``;
+let shuqisprwurlVal = ``;
+let shuqijlbodyVal = ``;
+let shuqisqjlbodyVal = ``;
 let shuqicjyurlVal = ``;
 let shuqicjcsbodyVal = ``;
 let shuqicjbodyVal = ``;
+let shuqijsspbodyVal = ``;
+let shuqijsydurlVal = ``;
+let shuqijsydbodyVal = ``;
+let shuqijsqdbodyVal = ``;
+let shuqijsqdspyurlVal = ``;
+let shuqijsqdspbodyVal = ``;
+let shuqijsrwbodyVal = ``;
+let shuqijsfxbodyVal = ``;
+let shuqijsbookurlVal = ``;
+let shuqijsbookbodyVal = ``;
+let shuqijssprwurlVal = ``;
+let middleshuqiuserURL = [];
+let middleshuqisyURL = [];
+let middleshuqisyBODY = [];
+let middleshuqispBODY = [];
+let middleshuqiscBODY = [];
+let middleshuqiydBODY = [];
+let middleshuqiqdBODY = [];
+let middleshuqirwBODY = [];
+let middleshuqifxBODY = [];
+let middleshuqisprwURL = [];
+let middleshuqijlBODY = [];
+let middleshuqisqjlBODY = [];
+let middleshuqicjyURL = [];
+let middleshuqicjcsBODY = [];
+let middleshuqicjBODY = [];
+let middleshuqijsspBODY = [];
+let middleshuqijsydURL = [];
+let middleshuqijsydBODY = [];
+let middleshuqijsqdBODY = [];
+let middleshuqijsqdspyURL = [];
+let middleshuqijsqdspBODY = [];
+let middleshuqijsrwBODY = [];
+let middleshuqijsfxBODY = [];
+let middleshuqijsbookURL = [];
+let middleshuqijsbookBODY = [];
+let middleshuqijssprwURL = [];
 if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
     console.log(
         `============ cookie方式为：方式一 boxjs复制会话 =============\n`
@@ -1859,14 +1929,14 @@ async function all() {
         if (shuqisyurlVal && shuqisybodyVal && shuqisyurlVal != '' && shuqisybodyVal != '') {
             await coin() //用户收益
         }
-        //await readlist(); //阅读时长
+        await readlist(); //阅读时长
 
         if (SC == 0) {
             if (shuqirwbodyVal && shuqirwbodyVal != '') {
                 await resource() //任务列表
             }
             if (shuqisprwurlVal && shuqisprwurlVal != '') {
-                //await videolist(); //视频任务
+                await videolist(); //视频任务
             }
             if (shuqicjyurlVal && shuqicjyurlVal != '') {
                 await lotteryinfo(); //抽奖页面
@@ -1875,10 +1945,10 @@ async function all() {
                 await jsresource() //极速版任务列表
             }
             if (shuqijssprwurlVal && shuqijssprwurlVal != '') {
-                //await jsvideolist() //极速版视频任务
+                await jsvideolist() //极速版视频任务
             }
             if (shuqijsqdspyurlVal && shuqijsqdspyurlVal != '') {
-                //await jsqdvideolist(); //极速版签到视频任务
+                await jsqdvideolist(); //极速版签到视频任务
             }
             if (shuqijlbodyVal && shuqijlbodyVal != '') {
                 await bubble(); //奖励页面
@@ -1949,7 +2019,7 @@ function user(timeout = 0) {
     })
 }
 //视频奖励
-//function video(timeout = 0) {
+function video(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2036,7 +2106,7 @@ function upload(timeout = 0) {
     })
 }
 //阅读奖励
-//function reads(timeout = 0) {
+function reads(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             for (let i = 0; i < 20; i++) {
@@ -2074,7 +2144,7 @@ function upload(timeout = 0) {
     })
 }
 //每日签到
-//function sign(timeout = 0) {
+function sign(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2168,7 +2238,7 @@ function resource(timeout = 0) {
     })
 }
 //每日分享
-//function share(timeout = 0) {
+function share(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2200,7 +2270,7 @@ function resource(timeout = 0) {
     })
 }
 //视频任务
-//function videolist(timeout = 0) {
+function videolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2263,7 +2333,7 @@ function bubble(timeout = 0) {
     })
 }
 //收取奖励
-//function manual(timeout = 0) {
+function manual(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2292,7 +2362,7 @@ function bubble(timeout = 0) {
     })
 }
 //阅读时长
-//function readlist(timeout = 0) {
+function readlist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2437,7 +2507,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版视频奖励
-//function jsvideo(timeout = 0) {
+function jsvideo(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2466,7 +2536,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版阅读奖励
-//function jsreads(timeout = 0) {
+function jsreads(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             for (let i = 0; i < 20; i++) {
@@ -2507,7 +2577,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版每日签到
-//function jssign(timeout = 0) {
+function jssign(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2539,7 +2609,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版签到视频任务
-//function jsqdvideolist(timeout = 0) {
+function jsqdvideolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2570,7 +2640,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版签到视频奖励
-//function jsqdvideo(timeout = 0) {
+function jsqdvideo(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2599,7 +2669,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版任务列表
-//function jsresource(timeout = 0) {
+function jsresource(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2677,7 +2747,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版每日分享
-//function jsshare(timeout = 0) {
+function jsshare(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2709,7 +2779,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版每日书城
-//function jsbooklist(timeout = 0) {
+function jsbooklist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2741,7 +2811,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版每日书城领奖
-//function jsbooklj(timeout = 0) {
+function jsbooklj(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
@@ -2773,7 +2843,7 @@ function lotterydraw(timeout = 0) {
     })
 }
 //极速版视频任务
-//function jsvideolist(timeout = 0) {
+function jsvideolist(timeout = 0) {
     return new Promise((resolve) => {
         setTimeout(() => {
             let url = {
