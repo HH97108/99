@@ -22,4 +22,4 @@ jobs:
           npm install
       - name: '运行【电】'     
         run: |
-          node Task/dsj.js
+          node Task/ds.js
