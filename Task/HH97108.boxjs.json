@@ -169,9 +169,9 @@
         "zqcash", 
         "zqcard"
       ], 
-      "repo": "https://github.com/HH97108/99/master/Task/youth.js", 
+      "repo": "https://github.com/HH97108/99/master/Task/youth2.js", 
       "id": "youth", 
-      "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/youth.js", 
+      "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/youth2.js", 
       "settings": [
         {
           "id": "zqcard", 
