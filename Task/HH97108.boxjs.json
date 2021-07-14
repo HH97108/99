@@ -331,7 +331,84 @@
             "icons": ["https://raw.githubusercontent.com/HH97108/99/master/Task/shuqi.png", "https://raw.githubusercontent.com/HH97108/99/master/Task/shuqi.png"],
             "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/shuqi.js"
         },
-        {
+
+    {
+      "id": "youthNeRead",
+      "name": "中青阅读",
+      "descs_html": [
+        "中青阅读脚本地址【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/zqread.js\">中青阅读</a>】",
+        "注意：因此脚本使用的阅读数据存储位置与songyangzz大佬的不同，所以需搭配【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/rewrite-zqread.plugin\">阅读数据抓包订阅</a>】抓取的阅读数据使用",
+        "⚠️：QX阅读数据可通过【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/zqGaReadData.js\">Http Backend脚本</a>】的方式导出：配置好后浏览器中访问即可获取数据"
+      ],
+      "author": "@ztxtop",
+      "settings": [{
+        "id": "readMode",
+        "name": "执行模式（点击查看设置说明）",
+        "val": "0",
+        "type": "text",
+        "desc": "0-循环阅读：任务执行时间需大于21秒\n1-去重排序：根据响应数据判断重复并将视频往前排，依此优化阅读效率（可用半角逗号间隔该模式运行的账号，如账号一跟账号三才执行去重排序：1,1,3）\n3-备份数据：根据指定的备份格式，将要备份的数据以log的形式打印出来（高版本qx限制了打印日志长度，需使用其它方式导出）\n4-清空所有中青数据"
+      }, {
+        "id": "zqReadScheme",
+        "name": "阅读数据备份输出格式",
+        "val": "DF",
+        "type": "radios",
+        "items": [{
+            "key": "QX",
+            "label": "QX持久化数据代码"
+          },
+          {
+            "key": "LS",
+            "label": "Loon&Surge持久化数据代码"
+          },
+          {
+            "key": "GA",
+            "label": "Github Actions使用的以&分隔数据"
+          },
+          {
+            "key": "DF",
+            "label": "Default"
+          }
+        ]
+      }, {
+        "id": "read_count",
+        "name": "账号1总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号1阅读数据总行数"
+      }, {
+        "id": "read_count2",
+        "name": "账号2总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号2阅读数据总行数"
+      }, {
+        "id": "read_count3",
+        "name": "账号3总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号3阅读数据总行数"
+      }, {
+        "id": "read_count4",
+        "name": "账号4总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号4阅读数据总行数"
+      }],
+       "id": "read_count4",
+        "name": "账号5总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号5阅读数据总行数"
+      }],
+      "repo": "https://github.com/ztxtop/x/blob/main/zqread.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
+      "script": "https://raw.githubusercontent.com/ztxtop/x/main/youth.js",
+      "scripts": [{
+        "name": "自动阅读",
+        "script": "https://raw.githubusercontent.com/ztxtop/x/main/zqread.js"
+      }]
+    },
+ {
             "id": "flw",
             "name": "返利网",
             "keys": ["flwurl", "flwheader", "flwspbody", "flwqwbody", "flwydbody", "flwurl2", "flwheader2", "flwspbody2", "flwqwbody2", "flwydbody2", "flwurl3", "flwheader3", "flwspbody3", "flwqwbody3", "flwydbody3", "flwurl4", "flwheader4", "flwspbody4", "flwqwbody4", "flwydbody4", "flwurl5", "flwheader5", "flwspbody5", "flwqwbody5", "flwydbody5", "flwurl6", "flwheader6", "flwspbody6", "flwqwbody6", "flwydbody6", "flwurl7", "flwheader7", "flwspbody7", "flwqwbody7", "flwydbody7", "flwurl8", "flwheader8", "flwspbody8", "flwqwbody8", "flwydbody8", "flwurl9", "flwheader9", "flwspbody9", "flwqwbody9", "flwydbody9", "flwurl10", "flwheader10", "flwspbody10", "flwqwbody10", "flwydbody10", "flwurl11", "flwheader11", "flwspbody11", "flwqwbody11", "flwydbody11", "flwurl12", "flwheader12", "flwspbody12", "flwqwbody12", "flwydbody12", "flwurl13", "flwheader13", "flwspbody13", "flwqwbody13", "flwydbody13", "flwurl14", "flwheader14", "flwspbody14", "flwqwbody14", "flwydbody14", "flwurl15", "flwheader15", "flwspbody15", "flwqwbody15", "flwydbody15", "flwurl16", "flwheader16", "flwspbody16", "flwqwbody16", "flwydbody16", "flwurl17", "flwheader17", "flwspbody17", "flwqwbody17", "flwydbody17", "flwurl18", "flwheader18", "flwspbody18", "flwqwbody18", "flwydbody18", "flwurl19", "flwheader19", "flwspbody19", "flwqwbody19", "flwydbody19", "flwurl20", "flwheader20", "flwspbody20", "flwqwbody20", "flwydbody20"],
