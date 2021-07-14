@@ -246,6 +246,7 @@
       "icons": ["https://raw.githubusercontent.com/HH97108/99/master/Task/youth.png", "https://raw.githubusercontent.com/HH97108/99/master/Task/youth.png"],
       "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/youth_banner.js"
     },
+
     {
       "id": "youthNeRead",
       "name": "中青阅读",
@@ -254,7 +255,8 @@
         "注意：因此脚本使用的阅读数据存储位置与songyangzz大佬的不同，所以需搭配【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/rewrite-zqread.plugin\">阅读数据抓包订阅</a>】抓取的阅读数据使用",
         "⚠️：QX阅读数据可通过【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/zqGaReadData.js\">Http Backend脚本</a>】的方式导出：配置好后浏览器中访问即可获取数据"
       ],
-{
+      "author": "@ztxtop",
+      "settings": [{
         "id": "readMode",
         "name": "执行模式（点击查看设置说明）",
         "val": "0",
@@ -306,13 +308,13 @@
         "val": "0",
         "type": "number",
         "desc": "账号4阅读数据总行数"
-      },
+      }],
        "id": "read_count4",
         "name": "账号5总阅读数",
         "val": "0",
         "type": "number",
         "desc": "账号5阅读数据总行数"
-      },
+      }],
       "repo": "https://github.com/ztxtop/x/blob/main/zqread.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
       "script": "https://raw.githubusercontent.com/ztxtop/x/main/youth.js",
