@@ -246,8 +246,7 @@
       "icons": ["https://raw.githubusercontent.com/HH97108/99/master/Task/youth.png", "https://raw.githubusercontent.com/HH97108/99/master/Task/youth.png"],
       "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/youth_banner.js"
     },
-
-    {
+ {
       "id": "youthNeRead",
       "name": "中青阅读",
       "descs_html": [
