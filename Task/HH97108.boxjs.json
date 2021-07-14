@@ -103,7 +103,7 @@
         "type": "number",
         "desc": "账号5阅读数据总行数"
       }],
-      "repo": "https://raw.githubusercontent.com/HH97108/99/master/Task/zqread.js",
+      "repo": "https://github.com/HH97108/99/master/Task/zqread.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
       "script": "https://raw.githubusercontent.com/HH97108/99/master/Task/youth2.js",
       "scripts": [{
