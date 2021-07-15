@@ -1,10 +1,10 @@
 
-name: 电视家
+name: 电
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 0 29 2 *'
   watch:
     types: started
   repository_dispatch:
