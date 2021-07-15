@@ -1,22 +1,14 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: 点
-
+name: ds
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0 0 29 2 *'
+     - cron: '3 0-15 * * *'
   watch:
     types: started
-
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-        YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
-        YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,19 +17,8 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.YOUTH_HEADER
         run: |
-          npm install
-      - name: '运行 【中青看点】'
-        if: env.YOUTH_HEADER
-        run: |
-          node Task/youth2.js
-        env:
-          YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+           npm install
+       - name: '运行【电】'     
+         run: |
+           node Task/ds.js
