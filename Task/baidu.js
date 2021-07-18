@@ -89,7 +89,7 @@ function getsign() {
 function withDraw() {
   return new Promise((resolve, reject) =>{
    let cashurl =  {
-      url: `https://haokan.baidu.com/activity/acuserwithdraw/confirm?productid=2&amount=500&trade_type=1`,
+      url: `https://haokan.baidu.com/activity/acuserwithdraw/confirm?productid=2&amount=3000&trade_type=1`,
       headers: {Cookie:cookieval,'User-Agent': UA}
       }
    $.get(cashurl, (error, response, data) => {
