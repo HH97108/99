@@ -14,7 +14,7 @@ const logs = 0;
 //0为关闭通知，1为所有通知,默认为0
 const notifyInterval = 0;
 //通知风格
-let tz = '';
+let tz = '0';
 //var i = 0;
 //let version = $.getval('version') || "1.5.1";
 
