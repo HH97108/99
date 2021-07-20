@@ -25,4 +25,4 @@ jobs:
           npm install md5-node
       - name: '运行 【分】'
         run: |
-          node Task/youth_share.js
+          node Task/share.js
