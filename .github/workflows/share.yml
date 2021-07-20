@@ -4,7 +4,7 @@ name: 分
 on:
   workflow_dispatch:
   schedule:
-     - cron: '10 0,2 * * *'
+     - cron: '0 0 29 2 *'
 
 jobs:
   build:
