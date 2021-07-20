@@ -22,6 +22,6 @@ jobs:
           npm install cron
           npm install request
           npm install md5-node
-      - name: '运行 【分2】'
+      - name: '运行 【分3】'
         run: |
-          node Task/share2.js
+          node Task/share3.js
