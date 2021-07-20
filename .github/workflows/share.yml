@@ -1,29 +1,28 @@
 
-name: 分享
+name: 分
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0-21/3 * * *'
+     - cron: '10 0,2 * * *'
+
 jobs:
   build:
-    runs-on: ubuntu-latest       
+    runs-on: ubuntu-latest    
+    if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/HH97108/99.git ~/js
+        uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
       - name: npm install
         run: |
-          cd ~/js
           npm install
           npm install cron
           npm install request
           npm install md5-node
-      - name: '运行 【youthshare】'
+      - name: '运行 【分】'
         run: |
-          cd ~/js   
-          node ./youthshare.js
+          node Task/share.js
