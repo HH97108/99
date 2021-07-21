@@ -25,4 +25,4 @@ jobs:
           npm install
       - name: '运行 【中看】'
         run: |
-          node youth_banner.js
+          node Task/youth_banner.js
