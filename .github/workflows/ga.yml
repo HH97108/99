@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        YOUTH_BANNER: ${{ secrets.youth_banner }}
+        YOUTH_LOOK: ${{ secrets.youth_look }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
