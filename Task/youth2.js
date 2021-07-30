@@ -14,7 +14,7 @@ let notifyInterval = $.getdata("notifytimes") || 50; //通知间隔，默认抽�
 const notify = $.isNode() ? require('./sendNotify') : '100';
 let ONCard = $.getdata('zqcard') || 'true'; //早起打卡开关
 let s = $.getdata('delay_rotary_zq') || '25'; //转盘延迟时间
-let withdrawcash = $.getdata('zqcash') || '30'; //提现金额
+let withdrawcash = $.getdata('zqcash') || '10'; //提现金额
 let cardTime = $.getdata('zqtime') || '05'; //打卡时间
 let withdrawUrl = "https://ios.baertt.com/v5/wechat/withdraw2.json";
 let withdrawBody = "p=9NwGV8Ov71o%3DgW5NEpb6rjb84bkaCQyOq-myT0C-Ktb_mEtDEGsOrBruuZzIpWlevTEf2n4e6SDtwtHI8jh7tGLFm1iscPtbZwlhO1--2rPMqEVay5SHQZ0Xa5om9y_QnFioIoDSg-ArtrfwznZt1IhRAOspLNm4F1Z4mRILDUTDM9AS-u45jBCxbWNThdWoHmF8oho9OGHr9zNzSs4yjpRQrbKl6TpcKJtSq4Po1LzKlwGHhb7fGXVopPnRBsvigwDJ23TdcTspmRksywDdkdtas3h0hlknKykMxFj4rK3yvHlayeetzOG_su3jd6r8FCLTYiLDmrt5RpUpnC5tKMeFpvjyC6GKoCXa9FxLm7eLwuHlwYXnx84Aae2RbgYAm0AOJ3Qq-JUhWrwkY2IOSmjgodkfI97sq5JU1-7i9BARBgyJYYfyeUoPcTCAFUNJBIwzRiVhV97AyzFlZvEmfHhEOkV1AM_R8oXTagbTz8uXZ1qLgv96p17VKuDguYMeQ90albhb7Nfxnu2_-JrqXbQycZoJY0_vcZod2hWEVxo_EEdqRDABRRd1MI8rdS7PTirY9aejG9n83KjMYF3-_fgdo2Qt6yeqjEVFEUs41qogFu1Hj4lJBI6uDKkIw9XqIAyh_X20csIbWghTlpKuuF9HTkYoPudVcum7_FLBuZB39310HCakh0Jx_bT-aMVzFCidORwyFTkO4DqKYtC40wBcos7DbWZ6d6hRJEE_UzCgUy7Yxh3VKKyhxTLZ40R1wZ1WChj6ZCQ2G2e9Tb54nyIuka5ShRG1jGBJ6jml0qi8D8zfz2cPkhD5qWcKVSy2bNpZJ6_rDoXG6p0b7I1ad1s%3D";
