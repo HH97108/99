@@ -365,9 +365,9 @@
         },
 
 {
-	"id": "sqxs.app.sub",
+        "id": "shuqi",
 	"name": "书旗&极速",
-	"author": "@zw119",
+	"author": "@HH97108",
 	"apps": [{
 		"id": "sqxs&speed",
 		"name": "书旗小说&极速",
@@ -594,7 +594,7 @@
 
 
 		],
-		"author": "@zw119",
+		"author": "@HH97108",
 		"settings": [{
 			"id": "sqxs",
 			"name": "当前账号",
@@ -614,7 +614,8 @@
 			"https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.png"
 		],
 		"script": "https://raw.githubusercontent.com/HH97108/99/master/Task/shuqi.js"
-	}]}
+	}]
+}
 ,
        {
             "id": "dsj",
