@@ -12,14 +12,15 @@ let dd = RT(0, 20)
 K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '', ddtime = '', wzids = '', spids = '', id = '';
 
 let jztturlArr = [];
-let jztturlVal = ``;
+let jztturlVal = `fDE6nwEEKCG_jIZu2yWui5a6VTXAI67q
+gdg8p4mCCWMfj_WYefHGQDqUeDfdTBfm`;
 let middlejzttURL = [];
 
 console.log(`${GXRZ}\n`);
 $.message += `${GXRZ}\n`
 if ($.isNode() && process.env.jztt_jzttURL) {
     XH = process.env.jztt_XH || "0";
-    TXTX = process.env.jztt_TXTX || "0";
+    TXTX = process.env.jztt_TXTX || "1";
     SC = process.env.jztt_SC || "0";
     notifyttt = process.env.jztt_notifyttt || "1";
     notifyInterval = process.env.jztt_notifyInterval || "2";
