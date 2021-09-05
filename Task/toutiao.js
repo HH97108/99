@@ -1,6 +1,6 @@
 
 
-const jobname = '九章头条'
+const jobname = '头条'
 const $ = Env(jobname)
 
 let taskmap = new Map();
