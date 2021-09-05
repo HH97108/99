@@ -13,8 +13,7 @@ K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '', ddtime = '', wz
 
 let jztturlArr = [];
 let jztturlVal = ``;
-let middlejzttURL = [fDE6nwEEKCG_jIZu2yWui5a6VTXAI67q
-gdg8p4mCCWMfj_WYefHGQDqUeDfdTBfm];
+let middlejzttURL = [];
 
 console.log(`${GXRZ}\n`);
 $.message += `${GXRZ}\n`
