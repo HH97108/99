@@ -12,9 +12,9 @@ let dd = RT(0, 20)
 K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '', ddtime = '', wzids = '', spids = '', id = '';
 
 let jztturlArr = [];
-let jztturlVal = `fDE6nwEEKCG_jIZu2yWui5a6VTXAI67q
-gdg8p4mCCWMfj_WYefHGQDqUeDfdTBfm`;
-let middlejzttURL = [];
+let jztturlVal = ``;
+let middlejzttURL = [fDE6nwEEKCG_jIZu2yWui5a6VTXAI67q
+gdg8p4mCCWMfj_WYefHGQDqUeDfdTBfm];
 
 console.log(`${GXRZ}\n`);
 $.message += `${GXRZ}\n`
