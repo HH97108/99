@@ -14,10 +14,10 @@ let notifyInterval = $.getdata("notifytimes") || 50; //通知间隔，默认抽�
 const notify = $.isNode() ? require('./sendNotify') : '100';
 let ONCard = $.getdata('zqcard') || 'true'; //早起打卡开关
 let s = $.getdata('delay_rotary_zq') || '25'; //转盘延迟时间
-let withdrawcash = $.getdata('zqcash') || '10'; //提现金额
+let withdrawcash = $.getdata('zqcash') || '30'; //提现金额
 let cardTime = $.getdata('zqtime') || '05'; //打卡时间
 let withdrawUrl = "https://ios.baertt.com/v5/wechat/withdraw2.json";
-let withdrawBody = "p=9NwGV8Ov71o%3DGvDnjwMsu_ld4qx0YVkhCGSN79Nz9uYVd_6x03zS0fnS8kKdOyWyDMKSICaFBvwH5U4nsR_vvJsjHH2Z81CBL7eyJjtPmVfyM0x8EAsS-_ESh4-JImy11uTAadxMJCYAdD7P_w27pQt6_tIUTgtnDG7LOKwRL-IZbYYNciqqQLJ4b2GwTBfDqMrEsTPjidr2yu-zwHdQyjsD9z2_Nh0NpubysP2piHJc3S5Y_ss2Spw9wXoYEUdOXsF8xDwL_ftCsXcBCUKZGReENYl6rZ0vURKitqD59u8PioNhRmEbMuuYnDAxuTQseSL3ZL6XE2zSAie60U_9mCKHq9KMMnzk2qr5duVs7vCoFJJMUQFAKTPdsuUHyE27FCC-phVwIhv8czr9DnPMUTVNucvleuFTNewdYWhSyqkuqBTaxekh52pCapU87AqHTCt-N4c_5oTBHYUsQOmqS7ScCQojzg_2n3csjnlgg8TpuWynoKRwtEN1yxkj28i86vzHeg78dFj1ET7XIUlJRtsd3fKIqOLhVAI25UNbeG0S02F2YRqATFv8SCiu19-X3hV1gFgtyUu3Lr9FEaMnibFV4E63xc_qZlVNRBdb910mSUzVuJsG9P0R4eTOLQwmIpstjOJFfOntULB64vsbgqJun5lyfrDXTuiPcFJNet95jDqSWtDEFn4f-ZMBiVdM1pTDZWqvw1-N38jwFlHjSY75Q0qn797p3fI8Q8bji0BhaYimu4p7lBR8MMszz3QUZdcOcYs_sGkUeFYLl8oOYG0Pd6l5v4uuGKvyH2mxvkuC5jtfXHtnD1BzxVAPKoriglaDsD9HhuJUZZ0TAPzW9_g%3D"
+let withdrawBody = "p=9NwGV8Ov71o%3DGvDnjwMsu_ld4qx0YVkhCGSN79Nz9uYVd_6x03zS0fnS8kKdOyWyDMKSICaFBvwH5U4nsR_vvJsjHH2Z81CBL7eyJjtPmVfyM0x8EAsS-_ESh4-JImy11uTAadxMJCYAdD7P_w27pQt6_tIUTgtnDG7LOKwRL-IZbYYNciqqQLJ4b2GwTBfDqMrEsTPjidr2yu-zwHdQyjsD9z2_Nh0NpubysP2piHJc3S5Y_ss2Spw9wXoYEUdOXsF8xDwL_ftCsXcBCUKZGReENYl6rZ0vURKitqD59u8PioNhRmEbMuuQZ94s9rotkswoazbpRJzzVtqZ_kEKIssMmQxDYaaC9-uVOHtVo_eXLyvx-FTEHirXf1aoxafTeMZ9iwt6KNHMWMNoLeVUu5dTsiOsvffXP8OYkzfPxJH3RETeJzbMUEu1uD9jp5DtazgcorlDjmEKXkSuwLPXLCiq7QK4PwNbsi-AsEZtKpGAA7hySi53tepil1HE37nVdDGnR3lHAsOZK7z-zaQxydGD-p4Gp7EIENCdwVeum7Ev6gZBt8lLv7V6zkBTbeQci4SwT6sSRfUIwFXAWq2I051FEp9AJz4S0OVm9YDeg-VFhnd2ocfmEP235bh2gXuHF4OoBjjyB6OC4Qn_qPNxX7nkc5oSC6Ybo-zNoHyccj44tJ4s6GHxd8UdAcYF5ciIJtTwJBrUehXDVRQtDo9YV0OocKs4ISMQc1ssss0BMbZ4Bf6K-HwFMjGoV4AJlIeYtvckma-RHbZa7vaNNIvurtazwHWYMvXLN-Yby8bQ2O2hx8XDt1U7ZO_a2noO1gSqID1QjOLTKinDTZb4lBiJYRA%3D"
 let READTIME = $.getdata('readtime_zq');
 let rotaryscore=0,doublerotary=0; 
 
