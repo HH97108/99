@@ -33,7 +33,7 @@ module.exports = {
     }, {
         "id": "dsjTXTX",
         "name": "余额提醒",
-        "val": "0",
+        "val": "30",
         "type": "number",
         "desc": "0不提醒 可设置0,5,10,20,25,30,50,100"
     }, {
@@ -69,25 +69,25 @@ module.exports = {
     "favIconColor": "grey",
     "datas": [{
         "key": "dsjheader",
-        "val": ""
+        "val": "6461c5fe3d969f941fdc3455600daca8&WXpBek9EZGhOV05sWkdWaE1HSmxOemMzTWpjellUWmlOV1prTnpjeE5XUT18MTYyNTcyMzQyNjI0NDY0NjA5MHwxZDQ1YTAwNjg4Mjc1ZDdmZmIwMmI0NDg5YTEwODU1MWQ0YmU5MWM4"
     }, {
         "key": "dsjtx",
         "val": ""
     }, {
         "key": "dsjheader2",
-        "val": ""
+        "val": "2b6452696881d5cb11cd73b67439ca82&TXpsaVpERmtPRFZpT0dVM1lUTXhZMlF4WXpZd1pUbGxaR1V4WkRsak5tVT18MTYyNTcyNDE4ODc3OTc0NjYxNXxiZmI2MWM1MDcwMDM1ZGZkZDQ4OTFjN2E4M2E5MmQwNzRkMWI0MTlk"
     }, {
         "key": "dsjtx2",
         "val": ""
     }, {
         "key": "dsjheader3",
-        "val": ""
+        "val": "3d650b61b1eacaa49cab7704e9b5b6f6&WkRnellqRmlZalpsWkdJNE9UazBZbVpqTXpoalpEa3hORFpsTldOa01XRT18MTYyOTQ2MDkyMjQ3NzgwMTgzN3w4NjkwZGRhY2UwYWU0YzEzY2MzMDFjNTk4NjcwNjJhYzk0ZGY2YjE4"
     }, {
         "key": "dsjtx3",
         "val": ""
     }, {
         "key": "dsjheader4",
-        "val": ""
+        "val": "3d6d28e528495f3c687249faa937a463&WkdFNE1UVmlOV1JoTTJabU1ESTNaalE1TkRBM01UbG1aV0k1TldGaVl6UT18MTYyOTcyMDA2MDYwMjgwMDYwNnw1ZDVjZjQ0NTRhNGVjNmJiYzg1NDgyZDlhY2QwMTU1MTA0ZTk4ZmJl"
     }, {
         "key": "dsjtx4",
         "val": ""
