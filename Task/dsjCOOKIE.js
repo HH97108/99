@@ -72,7 +72,7 @@ module.exports = {
         "val": "6461c5fe3d969f941fdc3455600daca8&WXpBek9EZGhOV05sWkdWaE1HSmxOemMzTWpjellUWmlOV1prTnpjeE5XUT18MTYyNTcyMzQyNjI0NDY0NjA5MHwxZDQ1YTAwNjg4Mjc1ZDdmZmIwMmI0NDg5YTEwODU1MWQ0YmU5MWM4"
     }, {
         "key": "dsjtx",
-        "val": "code=tx00006&rs=LMkvQV67p9yIgU05vsB7&sign=648b3bc76e6cef3ec9165dc8df220e19"
+        "val": ""
     }, {
         "key": "dsjheader2",
         "val": "2b6452696881d5cb11cd73b67439ca82&TXpsaVpERmtPRFZpT0dVM1lUTXhZMlF4WXpZd1pUbGxaR1V4WkRsak5tVT18MTYyNTcyNDE4ODc3OTc0NjYxNXxiZmI2MWM1MDcwMDM1ZGZkZDQ4OTFjN2E4M2E5MmQwNzRkMWI0MTlk"
