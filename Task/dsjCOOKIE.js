@@ -72,7 +72,7 @@ module.exports = {
         "val": "6461c5fe3d969f941fdc3455600daca8&WXpBek9EZGhOV05sWkdWaE1HSmxOemMzTWpjellUWmlOV1prTnpjeE5XUT18MTYyNTcyMzQyNjI0NDY0NjA5MHwxZDQ1YTAwNjg4Mjc1ZDdmZmIwMmI0NDg5YTEwODU1MWQ0YmU5MWM4"
     }, {
         "key": "dsjtx",
-        "val": "http://api.gaoqingdianshi.com/api/v2/cash/withdrawal?code=tx00006&rs=w0R77FYCJuYi2li&sign=cdec9be727dba0bb144a00ad2bf19529"
+        "val": "code=tx00006&rs=w0R77FYCJuYi2li&sign=cdec9be727dba0bb144a00ad2bf19529"
     }, {
         "key": "dsjheader2",
         "val": "2b6452696881d5cb11cd73b67439ca82&TXpsaVpERmtPRFZpT0dVM1lUTXhZMlF4WXpZd1pUbGxaR1V4WkRsak5tVT18MTYyNTcyNDE4ODc3OTc0NjYxNXxiZmI2MWM1MDcwMDM1ZGZkZDQ4OTFjN2E4M2E5MmQwNzRkMWI0MTlk"
