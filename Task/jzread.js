@@ -1,28 +1,15 @@
 
 /*
+九章头条
+变量为jzreadurl多账号用@隔开
 export jzreadurl='https://api.st615.com/v1/user/info?token=抓包的token'
 自行抓包替换 关键字为token 抓包的token
-提现变量为cashtx   直接设置为100，立马化身无情跑分机器。
-cashtx='100'
+提现变量为cashtx
 面额为0.3 2 5 30 50 100
-
-多账户设置变量
-
-jzreadurl
-jzreadurl2
-jzreadurl3
-jzreadurl4
-依次类推
-
-[rewrite_local]
-https://api.st615.com/v1/user/info\?token=\S+ url script-request-header jzread.js
-hostname = api.st615.com
-
-
+新账号提现改为export cashtx='0.3'
 */
 
-
-const $ = new Env('九章跑分机器');
+const $ = new Env('九章头条');
 let status;
 status = (status = ($.getval("jzreadstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 let jzreadurlArr = [],jzreadcount = ''
