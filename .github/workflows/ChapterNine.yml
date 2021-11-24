@@ -1,31 +1,28 @@
 name: 九章头条
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0-23/3 * * *'
+     - cron: '9 * * * *'
+  watch:
+    types: started
 jobs:
   build:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-        User: ${{ github.event.repository.owner.id }}
     steps:
-
       - name: Checkout
-        run: |
-          git clone https://github.com/kongjianweimei/18.git ~/js
-      - name: Use Node.js 14.x
+        uses: actions/checkout@v2
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: 12.x
       - name: npm install
         run: |
-          cd ~/js
           npm install
-          npm install cron
-          npm install request
-          npm install md5-node
-      - name: '运行 【九章头条】'
+      - name: '运行【九章头条】'     
         run: |
-          cd ~/js   
-          node Task/ChapterNine.js
+          node Task/jzread.js
+        env:
+          jzreadurl: ${{ secrets.jzreadurl }}
+          cashtx: ${{ secrets.cashtx }}
