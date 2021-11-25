@@ -436,6 +436,7 @@
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js"
         },
+
 {
             "id": "znxq",
             "name": "臻浓星球",
@@ -461,7 +462,14 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
+                {
+                    "id": "znxqDH",
+                    "name": "兑换商品",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "0关闭 13牛奶,16电饼档,17汤蒸锅,18篮球,19杯子,20筷子,21三件套,22工具套"
+                },
                 {
                     "id": "znxqXYZ",
                     "name": "执行概率",
@@ -489,7 +497,8 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.js"
